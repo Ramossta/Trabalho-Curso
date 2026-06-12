@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 export default function Titulo({ Home, Navbar, Features, Pricing, Disabled }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
@@ -21,19 +22,19 @@ export default function Titulo({ Home, Navbar, Features, Pricing, Disabled }) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a  className="nav-link active" aria-current="page" href="#">
                 <Link to="/login">{Home}</Link>
                 
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a  className="nav-link" href="#">
                 <Link to="/cadastro">{Features}</Link>
                 
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a  className="nav-link" href="#">
                 {Pricing}
               </a>
             </li>

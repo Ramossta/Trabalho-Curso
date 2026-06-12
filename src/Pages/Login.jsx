@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Login.module.css";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [showSenha, setShowSenha] = useState(false);
@@ -106,14 +106,17 @@ export default function Login() {
             Esqueci minha senha
           </a>
         </div>
-
+        <Link to="/Principal">
         <button
           className="btn w-100 text-white fw-semibold"
           style={{ backgroundColor: "#1D9E75", boxShadow: "none" }}
           onClick={handleLogin}
         >
+        
           Entrar
         </button>
+        </Link>
+
 
         <div className="d-flex align-items-center gap-2 my-3">
           <hr className="flex-grow-1 m-0" />
@@ -134,7 +137,9 @@ export default function Login() {
         <p className="text-center small text-muted mt-3 mb-0">
           Não tem uma conta?{" "}
           <a href="#" className="text-decoration-none fw-semibold" style={{ color: "#1D9E75" }}>
-            Cadastre-se
+            <Link to="/cadastro">
+              Cadastre-se
+            </Link>
           </a>
         </p>
       </div>

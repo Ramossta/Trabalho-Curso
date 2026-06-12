@@ -3,6 +3,8 @@ import {Routes, Route, Link} from 'react-router-dom';
 import Inicial from './Pages/Inicial';
 import Login from './Pages/Login';
 import Cadastro from './Pages/Cadastro';
+import Planos from './Pages/Planos';
+import Principal from './Pages/Principal';
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
         <Link to="/">Inicial</Link>
         <Link to="/login">Login</Link>
         <Link to="/cadastro">Cadastro</Link>
+        <Link to="/planos">Planos</Link>
+        <Link to="/principal">Principal</Link>
 
         <br />
         {/* Navigates to the about page */}
@@ -25,6 +29,9 @@ export default function App() {
         <Route path="/" element={<Inicial />} /> 
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/planos" element={<Planos />} />
+        <Route path="/principal" element={<Principal />} />
+        
       </Routes>
     </>
   );

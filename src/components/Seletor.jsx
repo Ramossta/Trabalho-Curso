@@ -1,4 +1,5 @@
 ﻿import heroImage from '../../nutri.png';
+import { Link } from 'react-router-dom';
 
 export default function Seletor() {
   return (
@@ -19,8 +20,12 @@ export default function Seletor() {
               O app que te ajuda a ter uma alimentação mais saudável, equilibrada e personalizada.
             </p>
             <div className="d-flex flex-column flex-sm-row gap-3 mb-4">
-              <button className="btn btn-success btn-lg px-4 shadow-sm">Comece agora</button>
-              <button className="btn btn-outline-success btn-lg px-4">Veja planos</button>
+              <Link to="/cadastro">
+                <button className="btn btn-success btn-lg px-4 shadow-sm">Comece agora</button>
+              </Link>
+              <Link to="/planos">
+                <button className="btn btn-outline-success btn-lg px-4">Veja planos</button>
+              </Link>
             </div>
             <div className="d-flex align-items-center gap-3 flex-wrap">
               <div className="d-flex align-items-center gap-2 text-success">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function NovasContas() {
   const [showSenha, setShowSenha] = useState(false);
@@ -183,7 +184,9 @@ export default function NovasContas() {
         <p className="text-center small text-muted mt-3 mb-0">
           Já tem uma conta?{" "}
           <a href="#" className="text-decoration-none fw-semibold" style={{ color: "#1D9E75" }}>
-            Entrar
+            <Link to="/login">
+              Entrar
+            </Link>
           </a>
         </p>
 
