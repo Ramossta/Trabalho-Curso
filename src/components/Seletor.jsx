@@ -4,7 +4,7 @@ export default function Seletor() {
   return (
     <section
       className="position-relative overflow-hidden"
-      style={{ backgroundColor: '#ffffff', minHeight: '720px' }}
+      style={{ backgroundColor: '#ffffff',  }}
     >
       <div className="container py-5">
         <div className="row gy-4 align-items-center">

@@ -1,4 +1,4 @@
-﻿export default function Page() {
+﻿export default function Parte() {
   return (
     <section className="py-5 bg-white">
       <div className="container">

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Titulo({ Home, Navbar, Features, Pricing, Disabled }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
@@ -20,12 +22,14 @@ export default function Titulo({ Home, Navbar, Features, Pricing, Disabled }) {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                {Home}
+                <Link to="/login">{Home}</Link>
+                
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                {Features}
+                <Link to="/cadastro">{Features}</Link>
+                
               </a>
             </li>
             <li className="nav-item">
